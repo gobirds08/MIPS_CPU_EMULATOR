@@ -129,10 +129,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\CPU.cpp" />
+    <ClCompile Include="src\InstructionMem.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\headers\Adder.h" />
+    <ClInclude Include="src\headers\ALU.h" />
+    <ClInclude Include="src\headers\ALUControl.h" />
     <ClInclude Include="src\headers\Component.h" />
+    <ClInclude Include="src\headers\Control.h" />
+    <ClInclude Include="src\headers\CPU.h" />
+    <ClInclude Include="src\headers\DataMemory.h" />
+    <ClInclude Include="src\headers\InstructionMem.h" />
+    <ClInclude Include="src\headers\Mux.h" />
+    <ClInclude Include="src\headers\PC.h" />
+    <ClInclude Include="src\headers\Registers.h" />
+    <ClInclude Include="src\headers\Shifter.h" />
+    <ClInclude Include="src\headers\SignExtender.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
