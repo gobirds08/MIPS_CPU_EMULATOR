@@ -129,9 +129,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Adder.cpp" />
+    <ClCompile Include="src\ALU.cpp" />
+    <ClCompile Include="src\ALUControl.cpp" />
+    <ClCompile Include="src\Control.cpp" />
     <ClCompile Include="src\CPU.cpp" />
+    <ClCompile Include="src\DataMemory.cpp" />
     <ClCompile Include="src\InstructionMem.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Mux.cpp" />
+    <ClCompile Include="src\PC.cpp" />
+    <ClCompile Include="src\Registers.cpp" />
+    <ClCompile Include="src\Shifter.cpp" />
+    <ClCompile Include="src\SignExtender.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\headers\Adder.h" />
