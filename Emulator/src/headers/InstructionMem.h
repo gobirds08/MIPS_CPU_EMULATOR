@@ -2,7 +2,7 @@
 
 #include "Component.h";
 
-class InstructionMem : Component {
+class InstructionMem : public Component {
 private:
 	uint32_t m_instruction;
 

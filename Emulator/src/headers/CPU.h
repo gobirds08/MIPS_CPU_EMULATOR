@@ -1,5 +1,8 @@
 #pragma once
 
+#include <memory>
+#include <vector>
+
 #include "InstructionMem.h";
 #include "Registers.h";
 #include "Adder.h";
@@ -17,4 +20,7 @@ public:
 	CPU();
 
 	void run();
+
+private:
+	std::vector<std::shared_ptr<Component>> m_components;
 };
