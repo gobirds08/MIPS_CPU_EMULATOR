@@ -16,7 +16,8 @@ CPU::CPU() {
 	std::shared_ptr<Shifter> shifter_two = std::make_shared<Shifter>();
 	std::shared_ptr<SignExtender> sign_extender = std::make_shared<SignExtender>();
 
-	// Setup Components Here 
+	// Setup Components Here
+	instruction_mem->setDependencies({ pc });
 
 	//Add To Components Vector in CPU
 	m_components.push_back(instruction_mem);
