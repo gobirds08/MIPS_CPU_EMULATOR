@@ -8,6 +8,8 @@ CPU::CPU() {
 	std::shared_ptr<Mux> mux_one = std::make_shared<Mux>();
 	std::shared_ptr<Mux> mux_two = std::make_shared<Mux>();
 	std::shared_ptr<Mux> mux_three = std::make_shared<Mux>();
+	std::shared_ptr<Mux> mux_four = std::make_shared<Mux>();
+	std::shared_ptr<Mux> mux_five = std::make_shared<Mux>();
 	std::shared_ptr<ALU> alu = std::make_shared<ALU>();
 	std::shared_ptr<PC> pc = std::make_shared<PC>();
 	std::shared_ptr<DataMemory> data_mem = std::make_shared<DataMemory>();
@@ -18,6 +20,8 @@ CPU::CPU() {
 
 	// Setup Components Here
 	instruction_mem->setDependencies({ pc });
+
+
 
 	//Add To Components Vector in CPU
 	m_components.push_back(instruction_mem);
